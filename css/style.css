@@ -18,9 +18,9 @@ dl {
     padding: 0;
     line-height: 1;
     color: #000000;
-    font-family: "A1 Mincho", "游明朝", YuMincho, "Hiragino Mincho ProN W3",
+    /* font-family: "A1 Mincho", "游明朝", YuMincho, "Hiragino Mincho ProN W3",
         "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝",
-        "ＭＳ 明朝", serif;
+        "ＭＳ 明朝", serif; */
     font-feature-settings: "palt";
 }
 
@@ -47,6 +47,7 @@ img {
 
 body {
     background-color: #000000;
+    font-family: ヒラギノ丸ゴ ProN W4;
 }
 
 /* ヘッダー */
@@ -63,6 +64,17 @@ body {
     display: flex;
     justify-content: space-between;
     margin-right: 6.09%;
+    margin-top: 20px;
+    font-family: 筑紫B丸ゴシック;
+    font-weight: bold;
+}
+
+h1 {
+    padding-left: 30px;
+}
+
+.header_container nav ul {
+    padding-top: 15px;
 }
 
 .nav {
@@ -78,8 +90,8 @@ nav li a {
     font-weight: bold;
     display: block;
     width: 200px;
-    /* color: #fff; */
     text-align: center;
+    color: #fff;
 }
 
 .hyoudai {
@@ -90,6 +102,8 @@ nav li a {
     font-size: 70px;
     text-align: center;
     margin-top: -550px;
+    font-family: 筑紫B丸ゴシック;
+    font-weight: bold;
 }
 
 .ton p {
@@ -111,6 +125,8 @@ h2 {
     font-size: 62px;
     text-align: center;
     color: #fff;
+    font-family: 筑紫B丸ゴシック;
+    font-weight: bold;
 }
 
 /* <!-- about 私について --> */
@@ -126,20 +142,27 @@ h2 {
     text-align: center;
     color: #fff;
     padding-top: 10px;
+    /* font-family: ヒラギノ丸ゴ ProN W4; */
 }
 
 .about_content {
     background-color: #fff;
     margin-right: 10%;
-    height: 591px;
+    height: 600px;
     max-width: 100%;
+    text-align: center;
 }
 
-h3 {
+.about_content2 {
+    width: 700px;
+}
+
+.name {
     /* text-align: center; */
     font-size: 90px;
     padding-left: 14.8%;
     padding-top: 70px;
+    /* font-family: ヒラギノ丸ゴ ProN W4; */
 }
 
 .about_content p {
@@ -149,22 +172,24 @@ h3 {
     padding-bottom: 105px;
     line-height: 1.75;
     display: block;
+    /* font-family: ヒラギノ丸ゴ ProN W4; */
 }
 
-h4 {
-    zoom: 0.4;
-    /* width: 50%; */
+.ware {
+    width: 450px;
     float: right;
-    margin-top: -1225px;
+    margin-top: -600px;
     position: relative;
+    margin-right: 10%;
 }
 
 .arrow {
     display: inline-block;
     height: 10px;
-    width: 120px;
+    width: 130px;
     position: relative;
-    top: 30px;
+    top: -5px;
+    padding-right: 10px;
     background-color: #000000;
 }
 
@@ -175,21 +200,21 @@ h4 {
     height: 0;
     border: 15px solid transparent;
     border-left: 15px solid;
-    left: 120px;
-    top: -5px;
+    left: 140px;
+    top: -10px;
 }
 
 .arrow_text {
     position: relative;
     font-size: 33px;
-    padding-left: 250px;
+    padding-left: 220px;
     margin-top: -150px;
 }
 
 /* <!-- WORK 製作したもの --> */
 
 .wrap2 {
-    padding-bottom: 160px;
+    padding-bottom: 100px;
     margin-top: 180px;
     padding-top: 80px;
     text-align: center;
@@ -214,6 +239,7 @@ h4 {
     margin: 0 auto;
     padding-left: 10px;
     padding-right: 10px;
+    /* font-family: ヒラギノ丸ゴ ProN W4; */
 }
 h5 {
     font-size: 35px;
@@ -262,6 +288,7 @@ h5 {
     margin: 0 auto;
     padding-left: 10px;
     padding-right: 10px;
+    /* font-family: ヒラギノ丸ゴ ProN W4; */
 }
 
 h6 {
@@ -336,6 +363,8 @@ h6 {
     width: 1000px;
     margin: 0 auto;
     margin-top: -200px;
+    font-family: 筑紫B丸ゴシック;
+    font-weight: bold;
 }
 
 .history1 {
@@ -366,6 +395,10 @@ h6 {
     padding-top: 10px;
 }
 
+.toiawase_content {
+    background: url(potoforio/images/last) no-repeat center center/cover;
+}
+
 /* .toiawase img {
     width: 100vw;
     height: 500px;
@@ -377,9 +410,9 @@ h6 {
     text-align: center;
     color: #fff;
     line-height: 1.75;
-    /* margin-top: -450px; */
     margin-bottom: 50px;
-    /* width: 400px; */
+    font-family: 筑紫B丸ゴシック;
+    font-weight: bold;
 }
 
 .box7 {
@@ -396,19 +429,53 @@ h6 {
 .toiawase_button {
     padding-top: 10px;
     color: #fff;
+    /* font-family: ヒラギノ丸ゴ ProN W4; */
 }
 
 .sns {
-    zoom: 0.075;
+    width: 100px;
 }
 
 .sns ul {
     display: flex;
     margin-top: 50px;
-    /* justify-content: space-between; */
+    justify-content: center;
 }
 
 .last p {
     text-align: center;
     font-size: 10px;
+    /* font-family: ヒラギノ丸ゴ ProN W4; */
+}
+
+/* ボタン */
+
+.botton {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.arrow1 {
+    display: inline-block;
+    position: relative;
+    border-radius: 50%;
+    width: 6em;
+    height: 6em;
+    background: #d1829d;
+    cursor: pointer;
+    vertical-align: middle;
+    margin-bottom: 4px;
+}
+
+.arrow1:before {
+    content: "";
+    position: absolute;
+    width: 2em;
+    height: 2em;
+    border-left: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    top: 42%;
+    left: 32%;
+    transform: rotate(135deg);
 }
