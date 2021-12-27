@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ポートフォリオ ABOUTpage</title>
+    <meta name="description" content="自分のポートフォリオ">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <!-- ヘッダー -->
+
+    <div class="header_content" id=header>
+
+
+        <div class="rogo">
+            <img src="images/透明ロゴマーク-1.png" alt="自分のロゴマーク">
+        </div>
+
+        <nav class="sns">
+            <img src="images/Instagramlogo.png" alt="インスタグラムロゴ">
+        </nav>
+
+        <div class="pc_menu_btn "><span></span></div>
+
+
+        <nav class="pc_nav" style="display: none;">
+            <ul>
+                <li><a href="#about">about</a></li>
+                <li><a href="#work">work</a></li>
+                <li><a href="#history">history</a></li>
+                <li><a href="#contact">contact</a></li>
+
+            </ul>
+
+        </nav>
+
+    </div>
+
+    <!-- タイトル -->
+
+    <div class="mokuji">
+        <h1>CONTACT</h1>
+        <p class="mokuji2">問い合わせ</p>
+        <p class="mokuji3">デザインのご依頼や予算のご相談、
+            <br>お問い合わせなどお気軽にお問い合わせください。
+        </p>
+
+    </div>
+
+    <!-- 問い合わせ 項目 -->
+    <div class="text">
+        <ul>
+            <p>お名前</p>
+            <div class="box1"></div>
+            <p>メールアドレス</p>
+            <div class="box2"></div>
+            <p>お問い合わせ題目</p>
+            <div class="box2"></div>
+            <p>お問い合わせ内容</p>
+            <div class="box3"></div>
+
+        </ul>
+
+    </div>
+
+    <!-- 送信ボタン -->
+
+    <div class="box4">
+        <div class="toiawase_button">
+            <a>内容を送信する</a>
+        </div>
+
+    </div>
+
+    <!-- フッター -->
+    <div class="footer_content">
+
+        <div class="footer_detail">
+            <ul class="footer_list">
+                <li class="footer_text"><a href="#about">about</a></li>
+                <li class="footer_text"><a href="#work">work</a></li>
+                <li class="footer_text"><a href="#history">history</a></li>
+                <li class="footer_text"><a href="#contact">contact</a></li>
+
+            </ul>
+        </div>
+
+        <div class="last">
+            <p>Copyright TSUJINO DAICHI All Right Reserved.</p>
+
+            <!-- ボタン -->
+
+
+            <div class="botton">
+                <a href="#header">
+                    <p><span class="arrow1"></span></p>
+                </a>
+            </div>
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+        <script>
+            $(function () {
+                $('.pc_menu_btn').click(function () {
+                    $('.pc_nav').fadeToggle();
+                    $('.pc_menu_btn').toggleClass('open');
+                });
+
+            });
+
+        </script>
+</body>
+
+</html>
