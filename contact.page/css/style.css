@@ -212,8 +212,8 @@ h1 {
 .box4 {
     color: #fff;
     font-size: 40px;
-    width: 550px;
-    height: 80px;
+    width: 30%;
+    height: 60px;
     background-color: #d1829d;
     margin: 0 auto;
     text-align: center;
@@ -222,7 +222,7 @@ h1 {
 }
 
 .toiawase_button {
-    padding-top: 20px;
+    padding-top: 10px;
     color: #fff;
     font-family: "ヒラギノ丸ゴ ProN W4", "Hiragino Maru Gothic ProN";
 }
@@ -233,6 +233,7 @@ h1 {
     max-width: 100%;
     background-color: #666666;
     justify-content: space-between;
+    padding-bottom: 30px;
 }
 
 .footer_list {
@@ -287,4 +288,114 @@ h1 {
     top: 42%;
     left: 32%;
     transform: rotate(135deg);
+}
+
+@media screen and (max-width: 767px) {
+    .header_content {
+        height: 50px;
+    }
+
+    .pc_menu_btn span {
+        width: 45px;
+        height: 3px;
+    }
+
+    .pc_menu_btn span::before,
+    .pc_menu_btn span::after {
+        width: 45px;
+        height: 3px;
+    }
+
+    .pc_menu_btn span::before {
+        bottom: 13px;
+    }
+
+    .pc_menu_btn span::after {
+        top: 13px;
+    }
+
+    .pc_menu_btn {
+        top: 25px;
+    }
+
+    .open span::before {
+        bottom: 0px;
+        transform: rotate(45deg);
+    }
+
+    .open span::after {
+        top: 0px;
+        transform: rotate(135deg);
+    }
+
+    /* <!-- タイトル --> */
+
+    h1 {
+        font-size: 35px;
+    }
+
+    .mokuji2 {
+        font-size: 25px;
+        padding-top: 10px;
+    }
+
+    .mokuji3 {
+        font-size: 15px;
+    }
+
+    /* <!-- 問い合わせ 項目 --> */
+
+    .text {
+        max-width: 100%;
+    }
+
+    .text p {
+        font-size: 15px;
+        padding-right: 10%;
+        padding-left: 10%;
+    }
+
+    .box1 {
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    .box2 {
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    .box3 {
+        height: 200px;
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    /* <!-- 送信ボタン --> */
+
+    .box4 {
+        width: 75%;
+    }
+
+    .toiawase_button {
+        padding-top: 5px;
+    }
+
+    .toiawase_button a {
+        font-size: 25px;
+    }
+
+    .footer_text {
+        font-size: 20px;
+    }
+
+    .arrow1 {
+        width: 3em;
+        height: 3em;
+    }
+
+    .arrow1:before {
+        width: 1em;
+        height: 1em;
+    }
 }

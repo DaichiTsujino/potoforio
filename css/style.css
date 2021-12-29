@@ -52,10 +52,6 @@ body {
 
 /* ヘッダー */
 
-.header_container img {
-    width: 25%;
-}
-
 .header_container {
     position: absolute;
     top: 0;
@@ -67,43 +63,41 @@ body {
     margin-top: 20px;
     font-family: 筑紫B丸ゴシック;
     font-weight: bold;
+    background: url(../images/ハワイ表紙.jpg) no-repeat center center/cover;
+    height: 700px;
 }
 
 h1 {
     padding-left: 30px;
+    max-width: 60px;
+    padding-top: 20px;
 }
 
 .header_container nav ul {
     padding-top: 15px;
 }
 
-.nav {
-    max-width: 100%;
-}
-
-nav ul {
+.menu ul {
     display: flex;
+    position: relative;
+    z-index: 100;
 }
 
-nav li a {
-    font-size: 40px;
-    font-weight: bold;
-    display: block;
-    width: 200px;
-    text-align: center;
+.menu li {
     color: #fff;
-}
-
-.hyoudai {
-    max-width: 100%;
+    font-size: 30px;
+    padding-right: 40px;
+    padding-top: 20px;
 }
 
 .ton {
     font-size: 70px;
     text-align: center;
-    margin-top: -550px;
+    /* margin-top: -550px; */
     font-family: 筑紫B丸ゴシック;
     font-weight: bold;
+    position: relative;
+    padding-top: 200px;
 }
 
 .ton p {
@@ -148,25 +142,27 @@ h2 {
 .about_content {
     background-color: #fff;
     margin-right: 10%;
-    height: 600px;
+    height: 560px;
     max-width: 100%;
     text-align: center;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .about_content2 {
-    width: 700px;
+    width: 60%;
 }
 
 .name {
     /* text-align: center; */
     font-size: 90px;
-    padding-left: 14.8%;
+    /* padding-left: 14.8%; */
     padding-top: 70px;
     font-family: "ヒラギノ丸ゴ ProN W4", "Hiragino Maru Gothic ProN";
 }
 
 .about_content p {
-    padding-left: 21.8%;
+    /* padding-left: 21.8%; */
     padding-top: 110px;
     font-size: 33px;
     padding-bottom: 105px;
@@ -176,11 +172,16 @@ h2 {
 }
 
 .ware {
-    width: 450px;
-    float: right;
-    margin-top: -600px;
+    width: 420px;
+    /* float: right; */
+    /* margin-top: -600px; */
     position: relative;
-    margin-right: 10%;
+    /* margin-right: 10%; */
+}
+
+.about_content_bottom {
+    display: flex;
+    justify-content: center;
 }
 
 .arrow {
@@ -188,7 +189,8 @@ h2 {
     height: 10px;
     width: 130px;
     position: relative;
-    top: -5px;
+    top: -15px;
+    right: 30px;
     padding-right: 10px;
     background-color: #000000;
 }
@@ -207,7 +209,7 @@ h2 {
 .arrow_text {
     position: relative;
     font-size: 33px;
-    padding-left: 220px;
+    /* padding-left: 220px; */
     margin-top: -150px;
 }
 
@@ -245,6 +247,14 @@ h5 {
     font-size: 35px;
     text-align: center;
     text-decoration: underline;
+}
+
+.box1 {
+    padding-right: 10px;
+}
+
+.box2 {
+    padding-right: 10px;
 }
 
 .box1 img {
@@ -291,7 +301,7 @@ h5 {
     font-family: "ヒラギノ丸ゴ ProN W4", "Hiragino Maru Gothic ProN";
 }
 
-h6 {
+h3 {
     font-size: 35px;
     text-align: center;
     text-decoration: underline;
@@ -309,7 +319,6 @@ h6 {
     font-size: 35px;
     padding-top: 40px;
     text-align: center;
-    text-decoration: underline;
     color: #fff;
 }
 
@@ -324,7 +333,6 @@ h6 {
     font-size: 35px;
     padding-top: 40px;
     text-align: center;
-    text-decoration: underline;
     color: #fff;
 }
 
@@ -359,8 +367,8 @@ h6 {
 
 .box6 {
     background-color: #666666;
-    height: 700px;
-    width: 1000px;
+    padding: 50px 30px;
+    max-width: 1000px;
     margin: 0 auto;
     margin-top: -200px;
     font-family: 筑紫B丸ゴシック;
@@ -397,15 +405,14 @@ h6 {
 
 .toiawase_content {
     background: url(../images/last.jpg) no-repeat center center/cover;
-    height: 300px;
-    padding: 100px;
+    max-width: 100%;
 }
 
 /* .toiawase img {
     width: 100vw;
 } */
 
-.toiawase_content p {
+.toiawase1 {
     font-size: 40px;
     text-align: center;
     color: #fff;
@@ -418,7 +425,7 @@ h6 {
 .box7 {
     color: #fff;
     font-size: 40px;
-    width: 550px;
+    max-width: 550px;
     height: 80px;
     background-color: #d1829d;
     margin: 0 auto;
@@ -426,31 +433,38 @@ h6 {
     border-radius: 30px;
 }
 
-.toiawase_button {
+.toiawase_button p {
     padding-top: 20px;
     color: #fff;
     font-family: "ヒラギノ丸ゴ ProN W4", "Hiragino Maru Gothic ProN";
 }
 
-.sns {
-    width: 120px;
+.sns img {
+    width: 5%;
     margin: 0 auto;
 }
 
-.sns_t {
-    padding: 5px;
+.insta {
+    padding-top: 20px;
+    text-align: center;
+    padding-bottom: 20px;
 }
+/* .sns_t {
+    padding: 5px;
+} */
 
-.sns ul {
+/* .sns ul {
     display: flex;
     margin-top: 50px;
     justify-content: center;
-}
+} */
 
 .last p {
     text-align: center;
     font-size: 10px;
     font-family: "ヒラギノ丸ゴ ProN W4", "Hiragino Maru Gothic ProN";
+    padding-bottom: 20px;
+    color: #fff;
 }
 
 /* ボタン */
@@ -483,4 +497,313 @@ h6 {
     top: 42%;
     left: 32%;
     transform: rotate(135deg);
+}
+
+.sp_history1 {
+    display: none;
+}
+
+.sp_history2 {
+    display: none;
+}
+
+.toiawase3 {
+    display: none;
+}
+
+.pc_menu_btn {
+    display: none;
+}
+
+@media screen and (max-width: 767px) {
+    .menu {
+        display: none;
+    }
+
+    .pc_menu_btn {
+        display: block;
+    }
+
+    .pc_nav {
+        display: block;
+    }
+
+    .pc_menu_btn {
+        position: absolute;
+        top: 40px;
+        right: 20px;
+        display: block;
+        cursor: pointer;
+        z-index: 100;
+    }
+
+    .pc_menu_btn span {
+        background-color: #fff;
+        width: 55px;
+        height: 4px;
+        display: block;
+        position: relative;
+        transition: 0.3s;
+    }
+
+    .pc_menu_btn span::before,
+    .pc_menu_btn span::after {
+        content: "";
+        width: 55px;
+        height: 4px;
+        display: block;
+        background-color: #fff;
+        position: absolute;
+        transition: 0.3s;
+    }
+
+    .pc_menu_btn span::before {
+        bottom: 18px;
+    }
+
+    .pc_menu_btn span::after {
+        top: 18px;
+    }
+
+    .open span {
+        background: transparent;
+    }
+
+    .open span::before {
+        bottom: 0px;
+        transform: rotate(45deg);
+    }
+
+    .open span::after {
+        top: 0px;
+        transform: rotate(135deg);
+    }
+
+    .pc_nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: #000000;
+    }
+
+    .pc_nav ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+    }
+
+    .pc_nav a {
+        color: #fff;
+        font-family: 筑紫B丸ゴシック;
+        font-size: 62px;
+        display: block;
+        padding: 20px 0;
+        text-align: center;
+    }
+
+    /* <!-- about 私について --> */
+
+    .header_container {
+        height: 350px;
+    }
+
+    .ton {
+        font-size: 30px;
+        padding-top: 140px;
+    }
+
+    .v_line_fix {
+        height: 50px;
+        width: 3px;
+    }
+
+    h1 {
+        max-width: 10%;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+
+    .wrap p {
+        font-size: 16px;
+    }
+
+    .wrap2 p {
+        font-size: 16px;
+    }
+
+    .wrap3 p {
+        font-size: 16px;
+    }
+
+    .wrap4 p {
+        font-size: 16px;
+    }
+
+    .wrap5 p {
+        font-size: 16px;
+    }
+
+    .work_content {
+        height: 1100px;
+        text-align: center;
+    }
+
+    .box1 h5 {
+        padding-top: 30px;
+    }
+
+    .work2_content {
+        display: block;
+    }
+    .box1 img {
+        width: 250px;
+        height: 250px;
+    }
+
+    .box2 img {
+        width: 250px;
+        height: 250px;
+    }
+
+    .box3 img {
+        width: 250px;
+        height: 250px;
+    }
+
+    .work2_content h5 {
+        font-size: 20px;
+    }
+
+    .wrap {
+        padding-top: 20px;
+    }
+
+    .wrap2 {
+        padding-top: 20px;
+    }
+
+    .wrap3 {
+        padding-top: 20px;
+    }
+
+    .wrap4 {
+        padding-top: 20px;
+    }
+
+    .wrap5 {
+        padding-top: 20px;
+    }
+
+    /* <!-- SKILLできること --> */
+
+    .skill_content {
+        display: block;
+        text-align: center;
+    }
+
+    .box4 img {
+        width: 250px;
+        height: 250px;
+    }
+
+    .box5 img {
+        width: 250px;
+        height: 250px;
+    }
+
+    .skill_content h3 {
+        font-size: 20px;
+        padding-bottom: 20px;
+    }
+
+    .skill_content p {
+        font-size: 16px;
+        line-height: 1.75;
+    }
+
+    /* <!-- HISTORY 想い --> */
+
+    .history_content img {
+        max-width: 70%;
+    }
+
+    .box6 {
+        padding: 10px 5px;
+        max-width: 80%;
+        margin-top: -80px;
+    }
+
+    .history1 {
+        font-size: 33px;
+        line-height: 1.73;
+        padding-top: 100px;
+        padding-bottom: 50px;
+    }
+
+    .sp_history1 {
+        display: block;
+    }
+
+    .history2 {
+        display: block;
+        font-size: 16px;
+    }
+
+    .sp_history2 {
+        display: block;
+    }
+
+    .sp_history3 {
+        display: none;
+    }
+
+    /* <!-- CONTACT 問い合わせ --> */
+
+    .toiawase_content {
+        padding: 40px;
+    }
+
+    .toiawase1 {
+        font-size: 16px;
+    }
+
+    .toiawase2 {
+        display: none;
+    }
+
+    .toiawase3 {
+        display: block;
+    }
+
+    .toiawase_button p {
+        font-size: 16px;
+    }
+
+    .box7 {
+        max-width: 200px;
+        height: 40px;
+    }
+
+    .toiawase_button p {
+        padding-top: -80px;
+    }
+
+    .sns img {
+        width: 10%;
+    }
+
+    .arrow1 {
+        width: 3em;
+        height: 3em;
+    }
+
+    .arrow1:before {
+        width: 1em;
+        height: 1em;
+    }
 }
