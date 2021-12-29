@@ -40,13 +40,9 @@ ul {
     list-style: none;
 }
 
-img {
-    max-width: 100%;
-}
-
 body {
     background-color: #000000;
-    font-family: "ヒラギノ丸ゴ ProN W4", "Hiragino Maru Gothic ProN";
+    font-family: ヒラギノ丸ゴ ProN W4;
 }
 
 /* ヘッダー */
@@ -166,101 +162,69 @@ h1 {
     padding-top: 50px;
 }
 
-.box1 {
-    height: 500px;
-    width: 90%;
-    background-color: #fff;
-    margin-top: 100px;
-}
-
-.name {
-    display: flex;
-}
-
-h2 {
-    font-size: 30px;
-    padding-left: 25%;
-    padding-top: 70px;
-}
-
-h3 {
-    font-size: 15px;
-    padding-left: 20px;
-    padding-top: 85px;
-    color: #808080;
-}
-
-.content_detail {
-    padding-left: 25%;
-    padding-top: 40px;
+.mokuji3 {
+    font-family: "ヒラギノ丸ゴ ProN W4", "Hiragino Maru Gothic ProN";
+    font-size: 32px;
+    color: #fff;
+    padding-top: 50px;
     line-height: 1.76;
-    font-size: 15px;
 }
 
-.content_p {
-    width: 375px;
-    padding-left: 60%;
-    margin-top: -430px;
+/* 問い合わせ項目 */
+
+.text p {
+    font-size: 22px;
+    font-family: "ヒラギノ丸ゴ ProN W4", "Hiragino Maru Gothic ProN";
+    color: #fff;
+    max-width: 1000px;
+    padding: 40px 0 0 0;
+    padding-left: 25%;
+}
+
+.box1 {
+    padding: 15px 0 0 0;
+    width: 25%;
+    height: 20px;
+    background-color: #fff;
+    margin-left: 25%;
+    margin-top: 20px;
 }
 
 .box2 {
-    height: 500px;
-    width: 90%;
+    padding: 15px 0 0 0;
+    width: 50%;
+    height: 20px;
     background-color: #fff;
-    margin-top: 200px;
-    margin-left: 10%;
-}
-
-.content2 {
-    padding-left: 60%;
-    padding-top: 20px;
-}
-
-h4 {
-    font-size: 20px;
-    line-height: 1.73;
-}
-
-.content2_detail {
-    line-height: 1.76;
-    font-size: 13px;
-}
-
-.content2_p {
-    padding-left: 13%;
-    width: 375px;
-    margin-top: -474px;
+    margin-left: 25%;
+    margin-top: 20px;
 }
 
 .box3 {
-    height: 500px;
-    width: 100%;
+    padding: 15px 0 0 0;
+    width: 50%;
+    height: 300px;
     background-color: #fff;
-    margin-top: 200px;
-    margin-left: -10%;
+    margin-left: 25%;
+    margin-top: 20px;
 }
 
-.content3 {
-    padding-left: 23%;
-    padding-top: 20px;
-}
-
-h5 {
-    font-size: 20px;
-    line-height: 1.73;
-}
-
-.content3_detail {
-    padding-top: 40px;
-    line-height: 1.76;
-    font-size: 15px;
-}
-
-.content3_p {
-    width: 335px;
-    padding-left: 62%;
-    margin-top: -490px;
+/* 送信ボタン */
+.box4 {
+    color: #fff;
+    font-size: 40px;
+    width: 30%;
+    height: 60px;
+    background-color: #d1829d;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 100px;
     margin-bottom: 100px;
+}
+
+.toiawase_button {
+    padding-top: 10px;
+    color: #fff;
+    font-family: "ヒラギノ丸ゴ ProN W4", "Hiragino Maru Gothic ProN";
 }
 
 /* フッター */
@@ -269,7 +233,7 @@ h5 {
     max-width: 100%;
     background-color: #666666;
     justify-content: space-between;
-    margin-top: 100px;
+    padding-bottom: 30px;
 }
 
 .footer_list {
@@ -278,8 +242,7 @@ h5 {
 
 .footer_text {
     font-size: 30px;
-    justify-content: center;
-    padding-right: 30px;
+    justify-content: space-between;
     margin: 0 auto;
     font-weight: bold;
     font-family: 筑紫B丸ゴシック;
@@ -294,6 +257,7 @@ h5 {
     color: #fff;
     padding-top: 30px;
 }
+
 /* ボタン */
 
 .botton {
@@ -324,4 +288,126 @@ h5 {
     top: 42%;
     left: 32%;
     transform: rotate(135deg);
+}
+
+@media screen and (max-width: 767px) {
+    .header_content {
+        height: 50px;
+    }
+
+    .rogo img {
+        width: 40px;
+        padding-top: 5px;
+        padding-left: 20px;
+    }
+
+    .sns img {
+        width: 45px;
+        padding-right: 80px;
+        padding-top: 3px;
+    }
+
+    .pc_menu_btn span {
+        width: 45px;
+        height: 3px;
+    }
+
+    .pc_menu_btn span::before,
+    .pc_menu_btn span::after {
+        width: 45px;
+        height: 3px;
+    }
+
+    .pc_menu_btn span::before {
+        bottom: 13px;
+    }
+
+    .pc_menu_btn span::after {
+        top: 13px;
+    }
+
+    .pc_menu_btn {
+        top: 25px;
+    }
+
+    .open span::before {
+        bottom: 0px;
+        transform: rotate(45deg);
+    }
+
+    .open span::after {
+        top: 0px;
+        transform: rotate(135deg);
+    }
+
+    /* <!-- タイトル --> */
+
+    h1 {
+        font-size: 35px;
+    }
+
+    .mokuji2 {
+        font-size: 25px;
+        padding-top: 10px;
+    }
+
+    .mokuji3 {
+        font-size: 15px;
+    }
+
+    /* <!-- 問い合わせ 項目 --> */
+
+    .text {
+        max-width: 100%;
+    }
+
+    .text p {
+        font-size: 15px;
+        padding-right: 10%;
+        padding-left: 10%;
+    }
+
+    .box1 {
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    .box2 {
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    .box3 {
+        height: 200px;
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    /* <!-- 送信ボタン --> */
+
+    .box4 {
+        width: 75%;
+    }
+
+    .toiawase_button {
+        padding-top: 5px;
+    }
+
+    .toiawase_button a {
+        font-size: 25px;
+    }
+
+    .footer_text {
+        font-size: 20px;
+    }
+
+    .arrow1 {
+        width: 3em;
+        height: 3em;
+    }
+
+    .arrow1:before {
+        width: 1em;
+        height: 1em;
+    }
 }
