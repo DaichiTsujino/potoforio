@@ -439,6 +439,10 @@ h5 {
         width: 100%;
     }
 
+    .sp_name_content {
+        width: 45%;
+    }
+
     .sp_content_p {
         width: 50%;
     }
