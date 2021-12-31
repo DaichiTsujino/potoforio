@@ -426,7 +426,7 @@ h3 {
     color: #fff;
     font-size: 40px;
     max-width: 550px;
-    height: 80px;
+    padding: 20px 20px;
     background-color: #d1829d;
     margin: 0 auto;
     text-align: center;
@@ -434,7 +434,6 @@ h3 {
 }
 
 .toiawase_button p {
-    padding-top: 20px;
     color: #fff;
     font-family: "ヒラギノ丸ゴ ProN W4", "Hiragino Maru Gothic ProN";
 }
@@ -512,6 +511,10 @@ h3 {
 }
 
 .pc_menu_btn {
+    display: none;
+}
+
+.sp_name_content {
     display: none;
 }
 
@@ -608,6 +611,26 @@ h3 {
 
     /* <!-- about 私について --> */
 
+    .about_content {
+        height: auto;
+        margin-right: 0;
+        text-align: center;
+    }
+
+    .about_content p {
+        font-size: 13px;
+        padding-top: 0;
+        padding-bottom: 20px;
+    }
+
+    .about_content2 {
+        width: 55%;
+    }
+
+    .ware {
+        width: 45%;
+    }
+
     .header_container {
         height: 350px;
         margin-top: 0px;
@@ -622,6 +645,45 @@ h3 {
         height: 50px;
         width: 3px;
     }
+
+    .name_content {
+        display: none;
+    }
+
+    .sp_name_content {
+        display: block;
+    }
+
+    .sp_name {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        font-size: 25px;
+        font-family: "ヒラギノ丸ゴ ProN W4", "Hiragino Maru Gothic ProN";
+    }
+
+    .arrow {
+        top: 7px;
+        width: 30px;
+        height: 5px;
+        right: 15px;
+    }
+
+    .arrow:before {
+        border: 8px solid transparent;
+        border-left: 8px solid;
+        left: 40px;
+        top: -5px;
+    }
+
+    .arrow_text {
+        margin-top: 0;
+    }
+
+    .ware img {
+        vertical-align: bottom;
+    }
+
+    /* <!-- WORK 製作したもの --> */
 
     h1 {
         max-width: 10%;
@@ -785,16 +847,11 @@ h3 {
 
     .toiawase_button p {
         font-size: 16px;
-        padding-top: -80px;
     }
 
     .box7 {
         max-width: 200px;
-        height: 40px;
-    }
-
-    .toiawase_button p {
-        padding-top: -80px;
+        padding: 10px 0;
     }
 
     .sns img {

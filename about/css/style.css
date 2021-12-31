@@ -57,6 +57,8 @@ body {
     background-color: #666666;
     display: flex;
     justify-content: space-between;
+    font-family: 筑紫B丸ゴシック;
+    font-weight: bold;
 }
 
 .rogo img {
@@ -279,7 +281,7 @@ h5 {
 .footer_text {
     font-size: 30px;
     justify-content: center;
-    padding-right: 30px;
+
     margin: 0 auto;
     font-weight: bold;
     font-family: 筑紫B丸ゴシック;
@@ -324,4 +326,226 @@ h5 {
     top: 42%;
     left: 32%;
     transform: rotate(135deg);
+}
+
+.box4 {
+    display: none;
+}
+
+.box5 {
+    display: none;
+}
+
+.box6 {
+    display: none;
+}
+
+.box7 {
+    display: none;
+}
+
+.box8 {
+    display: none;
+}
+.box9 {
+    display: none;
+}
+
+@media screen and (max-width: 767px) {
+    .box1 {
+        display: none;
+    }
+
+    .box2 {
+        display: none;
+    }
+
+    .box3 {
+        display: none;
+    }
+
+    .header_content {
+        height: 50px;
+    }
+
+    .rogo img {
+        width: 40px;
+        padding-top: 5px;
+        padding-left: 20px;
+    }
+
+    .sns img {
+        width: 45px;
+        padding-right: 80px;
+        padding-top: 3px;
+    }
+
+    .pc_menu_btn span {
+        width: 45px;
+        height: 3px;
+    }
+
+    .pc_menu_btn span::before,
+    .pc_menu_btn span::after {
+        width: 45px;
+        height: 3px;
+    }
+
+    .pc_menu_btn span::before {
+        bottom: 13px;
+    }
+
+    .pc_menu_btn span::after {
+        top: 13px;
+    }
+
+    .pc_menu_btn {
+        top: 25px;
+    }
+
+    .open span::before {
+        bottom: 0px;
+        transform: rotate(45deg);
+    }
+
+    .open span::after {
+        top: 0px;
+        transform: rotate(135deg);
+    }
+
+    /* <!-- タイトル --> */
+
+    h1 {
+        font-size: 35px;
+    }
+
+    .mokuji2 {
+        font-size: 25px;
+        padding-top: 10px;
+    }
+
+    /* <!-- 自己紹介 --> */
+
+    .box4 {
+        background-color: #fff;
+        padding: 0 20px 0 20px;
+        margin-top: 50px;
+        display: block;
+    }
+
+    .box5 {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .sp_content_p {
+        width: 50%;
+    }
+
+    .sp_content_p img {
+        vertical-align: bottom;
+    }
+
+    .sp_name1 {
+        padding-top: 20px;
+        font-size: 25px;
+    }
+
+    .sp_name2 {
+        padding-top: 20px;
+        font-size: 22px;
+        color: #808080;
+    }
+
+    .sp_name3 {
+        padding-top: 20px;
+        font-size: 15px;
+        line-height: 1.75;
+    }
+
+    .box6 {
+        max-width: 100%;
+        margin-top: 50px;
+        display: block;
+    }
+
+    .box6_text {
+        text-align: center;
+        font-size: 17px;
+        color: #fff;
+        line-height: 1.75;
+        font-family: 筑紫B丸ゴシック;
+        font-weight: bold;
+    }
+
+    .box7 {
+        max-width: 100%;
+        margin-top: 50px;
+        background: url(../images/無限大画像.jpeg) no-repeat center center/cover;
+        display: block;
+    }
+
+    .box7_text {
+        text-align: center;
+        font-size: 25px;
+        padding: 30px 20px 30px 20px;
+        color: #fff;
+        line-height: 1.75;
+        font-family: 筑紫B丸ゴシック;
+        font-weight: bold;
+    }
+
+    .box8 {
+        max-width: 100%;
+        margin-top: 50px;
+        background: url(../images/可能性\　画像.jpeg) no-repeat center
+            center/cover;
+        padding: 40px;
+        display: block;
+    }
+
+    .box8_text {
+        text-align: center;
+        font-size: 25px;
+        padding: 40px 20px 40px 20px;
+        color: #fff;
+        line-height: 1.75;
+        font-family: 筑紫B丸ゴシック;
+        font-weight: bold;
+    }
+
+    .box9 {
+        display: block;
+    }
+
+    .box9_text {
+        text-align: center;
+        font-size: 28px;
+        padding: 40px 20px 40px 20px;
+        color: #fff;
+        line-height: 1.75;
+        font-family: 筑紫B丸ゴシック;
+        font-weight: bold;
+    }
+
+    /* フッター */
+
+    .footer_content {
+        margin-top: 30px;
+    }
+
+    .footer_text {
+        font-size: 20px;
+    }
+
+    .arrow1 {
+        width: 3em;
+        height: 3em;
+    }
+
+    .arrow1:before {
+        width: 1em;
+        height: 1em;
+    }
 }

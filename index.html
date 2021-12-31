@@ -32,7 +32,7 @@
 
             </nav>
 
-            <div class="pc_menu_btn "><span></span></div>
+            <div class="pc_menu_btn"><span></span></div>
 
             <nav class="pc_nav" style="display: none;">
                 <ul>
@@ -70,14 +70,22 @@
     <div class="about_content">
 
         <div class="about_content2">
-            <div class="name">Tujino Daichi</div>
-            <p>心躍る事が好きだからこそ<br>次は自分が創る側に。</p>
+
+            <div class="name_content">
+                <div class="name">Tujino Daichi</div>
+                <p>心躍る事が好きだからこそ<br>次は自分が創る側に。</p>
+            </div>
+
+            <div class="sp_name_content">
+                <div class="sp_name">Tujino Daichi</div>
+                <p class="name_text">心躍る事が好きだからこそ<br>次は自分が創る側に。</p>
+            </div>
 
             <div class="about_content_bottom">
                 <div class="arrow"></div>
 
                 <div class="arrow_text">
-                    <p><a href="about.page/about.html">MORE</a></p>
+                    <p><a href="about/about.html">MORE</a></p>
                 </div>
 
             </div>
@@ -213,7 +221,7 @@
 
         <div class="box7">
             <div class="toiawase_button">
-                <p><a>問い合わせはこちらから</a></p>
+                <p><a href="contact/contact.html">問い合わせはこちらから</a></p>
             </div>
 
         </div>
@@ -243,9 +251,10 @@
 
     <script>
         $(function () {
-            $('.pc_menu_btn').click(function () {
+            $('.pc_menu_btn,.pc_nav li').click(function () {
                 $('.pc_nav').fadeToggle();
                 $('.pc_menu_btn').toggleClass('open');
+
             });
 
         });
