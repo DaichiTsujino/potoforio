@@ -52,7 +52,7 @@ body {
 /* ヘッダー */
 
 .header_content {
-    height: 80px;
+    padding: 10px;
     max-width: 100%;
     background-color: #666666;
     display: flex;
@@ -378,6 +378,10 @@ h5 {
         width: 45px;
         padding-right: 80px;
         padding-top: 3px;
+    }
+
+    .pc_menu_btn {
+        padding-top: 10px;
     }
 
     .pc_menu_btn span {
