@@ -46,7 +46,7 @@ img {
 
 body {
     background-color: #222222;
-    font-family: ヒラギノ丸ゴ ProN W4;
+    font-family: "ヒラギノ丸ゴ ProN W4", "Hiragino Maru Gothic ProN";
 }
 
 /* ヘッダー */
@@ -525,6 +525,11 @@ h2 {
 }
 
 @media screen and (max-width: 767px) {
+    body {
+        background-color: #222222;
+        font-family: ヒラギノ丸ゴ ProN W4;
+    }
+
     .menu {
         display: none;
     }
